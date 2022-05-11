@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.qa.baetraining.service.MovieServiceTest" time="0.841" tests="7" errors="0" skipped="0" failures="0">
+  <properties/>
+  <testcase name="findBySeenTest" classname="com.qa.baetraining.service.MovieServiceTest" time="0.032"/>
+  <testcase name="testAddMovie" classname="com.qa.baetraining.service.MovieServiceTest" time="0.056"/>
+  <testcase name="testGetById" classname="com.qa.baetraining.service.MovieServiceTest" time="0.006"/>
+  <testcase name="removeMovie" classname="com.qa.baetraining.service.MovieServiceTest" time="0.007"/>
+  <testcase name="findByYearTest" classname="com.qa.baetraining.service.MovieServiceTest" time="0.006"/>
+  <testcase name="findByRatingTest" classname="com.qa.baetraining.service.MovieServiceTest" time="0.006"/>
+  <testcase name="findByUnSeenTest" classname="com.qa.baetraining.service.MovieServiceTest" time="0.006"/>
+</testsuite>

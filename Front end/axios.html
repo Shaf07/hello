@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <title>Movie Shack</title>
+</head>
+
+<body>
+  <div class="container my-5">
+    <div class="text-center">
+      <h1 class="display-4 text-center mb-3">Movie Shack</h1>
+      <button class="btn btn-primary" id="allMovies">My Movie List</button>
+      <button class="btn btn-secondary" id="unseenFilms">Movies you haven't watched</button>
+      <button class="btn btn-secondary" id="seenFilms">Movies you have consumed</button>
+    </div>
+
+    <form id="addMovieForm">
+      <br>
+      <fieldset>
+        <h2> Add to your collection:</h2>
+        <br>
+        <label for="name">Title:</label>
+        <input type="text" id="movieTitle" name="movieTitle">
+        <br>
+        <label for="year">Year:</label>
+        <input type="number" id="releaseYear" name="releaseYear">
+        <br>
+        <label for="rating">Star rating:</label>
+        <input type="number" id="rating" name="rating" min="1" max="5">
+        <br>
+        <input type="radio" id="seen" value="true" name="seen"><label for="seen">I've seen this</label>
+        <br>
+        <input type="radio" id="seen" value="false" name="seen"><label for="seen">Not seen yet</label><br><br>
+      </fieldset>
+      <button type="submit" class="btn btn-outline-secondary" id="addMovie">Add to list</button>
+    </form>
+    <br>
+    <hr>
+    <br>
+    <h3>
+      Search your movies:
+    </h3>
+    <form id="findMovieForm">
+      <br>
+      <label for="name">Title:</label>
+      <input type="text" id="movieTitle" name="movieTitle">
+      <br>
+      <br>
+      <button type="submit" class="btn btn-outline-secondary" id="findMovie">Search</button>
+    </form>
+    <br>
+    <br>
+    <hr>
+
+    <form id="updateMovieForm">
+      <br>
+      <fieldset>
+        <h3> Update movie details:</h3>
+        <br>
+        <label for="id">Movie ID:</label>
+        <input type="number" id="id" name="id">
+        <h6>(An ID is needed to edit a film)</h6>
+        <label for="name">Title:</label>
+        <input type="text" id="movieTitle" name="movieTitle">
+        <br>
+        <label for="year">Year:</label>
+        <input type="number" id="releaseYear" name="releaseYear">
+        <br>
+        <label for="rating">Star rating:</label>
+        <input type="number" id="rating" name="rating" min="1" max="5">
+        <br>
+        <input type="radio" id="seen" value="true" name="seen"><label for="seen">I've seen this</label>
+        <br>
+        <input type="radio" id="seen" value="false" name="seen"><label for="seen">Not seen yet</label><br><br>
+      </fieldset>
+      <button type="submit" class="btn btn-outline-secondary" id="updateMovie">Update</button>
+    </form>
+    <br>
+    <hr>
+
+    <h3>"Remove a movie using ID:"</h3>
+    <form id="DeleteForm">
+      <br>
+      <label for="id">Movie ID:</label>
+      <input type="number" id="id" name="id">
+      <br>
+      <br>
+      <button type="submit" class="btn btn-outline-secondary" id="deleteById">Remove</button>
+    </form>
+
+    <br>
+    <hr>
+    <br>
+    <h3>
+      View by rating:
+    </h3>
+    <form id="viewByRatingForm">
+      <br>
+      <label for="rating">Star rating:</label>
+      <input type="number" id="rating" name="rating" min="0" max="5">
+      <br>
+      <br>
+      <button type="submit" class="btn btn-outline-secondary" id="viewByRating">Search</button>
+    </form>
+    <br>
+    <hr>
+    <br>
+    <h3>
+      View by year of release:
+    </h3>
+    <form id="viewByYearForm">
+      <br>
+      <label for="year">Year of release:</label>
+      <input type="number" id="releaseYear" name="releaseYear">
+      <br>
+      <br>
+      <button type="submit" class="btn btn-outline-secondary" id="viewByYear">Search</button>
+    </form>
+    <br>
+    <hr>
+    <h1> Your Matches:</h1>
+    <hr />
+    <div id="res"></div>
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.1/axios.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.qa.baetraining.controller.MovieControllerIntegrationTest" time="1.464" tests="9" errors="0" skipped="0" failures="0">
+  <properties/>
+  <testcase name="getByRatingTest" classname="com.qa.baetraining.controller.MovieControllerIntegrationTest" time="0.181"/>
+  <testcase name="getByIdTest" classname="com.qa.baetraining.controller.MovieControllerIntegrationTest" time="0.025"/>
+  <testcase name="removeMovieTest" classname="com.qa.baetraining.controller.MovieControllerIntegrationTest" time="0.111"/>
+  <testcase name="getBySeenTest" classname="com.qa.baetraining.controller.MovieControllerIntegrationTest" time="0.018"/>
+  <testcase name="getByMovieTitleTest" classname="com.qa.baetraining.controller.MovieControllerIntegrationTest" time="0.012"/>
+  <testcase name="updateTest" classname="com.qa.baetraining.controller.MovieControllerIntegrationTest" time="0.042"/>
+  <testcase name="getAllTest" classname="com.qa.baetraining.controller.MovieControllerIntegrationTest" time="0.032"/>
+  <testcase name="getByYearTest" classname="com.qa.baetraining.controller.MovieControllerIntegrationTest" time="0.009"/>
+  <testcase name="createTest" classname="com.qa.baetraining.controller.MovieControllerIntegrationTest" time="0.019"/>
+</testsuite>

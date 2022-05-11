@@ -1,0 +1,4 @@
+com\qa\baetraining\controller\MovieControllerIntegrationTest.class
+com\qa\baetraining\service\MovieServiceTest.class
+com\qa\baetraining\BaeSpringApplicationTests.class
+com\qa\baetraining\domain\MovieTest.class
